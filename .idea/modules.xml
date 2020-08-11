@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/author/author.iml" filepath="$PROJECT_DIR$/author/author.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka/eureka.iml" filepath="$PROJECT_DIR$/eureka/eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka02/eureka02.iml" filepath="$PROJECT_DIR$/eureka02/eureka02.iml" />
       <module fileurl="file://$PROJECT_DIR$/export/export.iml" filepath="$PROJECT_DIR$/export/export.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/xh-cloud.iml" filepath="$PROJECT_DIR$/xh-cloud.iml" />
     </modules>
   </component>

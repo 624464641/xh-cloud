@@ -1,0 +1,18 @@
+server:
+  port: 10003
+
+spring:
+  application:
+    name: xh-author
+  # Mysql
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.31.106:3306/database_name?serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=true
+    username: sg
+    password: Ssg-DKJ832-QSEF
+eureka:
+  client:
+    service-url:
+      defaultZone : http://xh1:10000/eureka/
+  instance:
+    hostname: xh-author
