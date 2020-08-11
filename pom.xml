@@ -76,13 +76,13 @@
         </dependencies>
     </dependencyManagement>
 
-
     <!--     集合子模块 -->
     <modules>
         <module>eureka</module>
         <module>eureka02</module>
         <module>export</module>
         <module>author</module>
+        <module>gateway</module>
     </modules>
 
 </project>
