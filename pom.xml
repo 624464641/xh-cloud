@@ -83,6 +83,7 @@
         <module>author</module>
         <module>gateway</module>
         <module>message</module>
+        <module>config</module>
     </modules>
 
 </project>
