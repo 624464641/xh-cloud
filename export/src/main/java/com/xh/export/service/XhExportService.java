@@ -6,5 +6,5 @@ package com.xh.export.service;
  */
 public interface XhExportService {
 
-    void test();
+    String test();
 }

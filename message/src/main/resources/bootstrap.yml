@@ -1,13 +1,12 @@
 server:
-  port: 10002
-
+  port: 10005
 spring:
   application:
-    name: xh-export
+    name: xh-message
 eureka:
   client:
     service-url:
       defaultZone : http://xh1:10000/eureka/
   instance:
-    hostname: xh-export
+    hostname: xh-message
     prefer-ip-address: true
