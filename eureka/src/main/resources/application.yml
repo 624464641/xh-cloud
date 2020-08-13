@@ -8,11 +8,13 @@ eureka:
   instance:
     hostname: xh1
     prefer-ip-address: true
+  server:
+    peer-node-read-timeout-ms: 1000
   client:
     register-with-eureka: false #false 表示不向注册中心中注册自己
     fetch-registry: false #false 表示自己端就是注册中心,我的职责就是维护服务实例，并不需要去检索服务
     service-url:
-      defaultZone : http://xh1:10000/eureka/
+      defaultZone : @xh.eureka.url@
     ##  註冊到服務的名稱
 spring:
   application:

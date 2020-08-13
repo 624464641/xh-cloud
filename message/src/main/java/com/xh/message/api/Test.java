@@ -1,5 +1,6 @@
 package com.xh.message.api;
 
+import com.xh.common.responses.R;
 import com.xh.message.feign.ExportFeignApi;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,8 +21,8 @@ public class Test {
     }
 
     @GetMapping("/say")
-    public String say(){
+    public R say(){
         System.out.println("message====进来了！" +exportFeignApi.findExport("123") );
-        return "message";
+        return R.ok().data(exportFeignApi.findExport("123") );
     }
 }

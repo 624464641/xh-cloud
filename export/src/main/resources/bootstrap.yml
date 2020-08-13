@@ -4,6 +4,13 @@ server:
 spring:
   application:
     name: xh-export
+  cloud:
+    config:
+      fail-fast: true
+      discovery:
+        enabled: true # 是否启动服务发现
+        service-id: xh-config
+      uri: http://xh1:10006/
 eureka:
   client:
     service-url:

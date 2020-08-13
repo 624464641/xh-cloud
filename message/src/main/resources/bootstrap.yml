@@ -3,10 +3,17 @@ server:
 spring:
   application:
     name: xh-message
+  cloud:
+    config:
+      fail-fast: true
+      discovery:
+        enabled: true # 是否启动服务发现
+        service-id: xh-config
+      uri: http://xh1:10006/
 eureka:
   client:
     service-url:
-      defaultZone : http://xh1:10000/eureka/
+      defaultZone : http://xh1:10000/eureka
   instance:
     hostname: xh-message
     prefer-ip-address: true
