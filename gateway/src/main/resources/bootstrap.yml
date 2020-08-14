@@ -6,7 +6,7 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://xh1:10000/eureka/
+      defaultZone: http://xh1:10000/eureka
 spring:
   application:
     name: xh-gateway
