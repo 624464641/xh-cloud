@@ -1,6 +1,7 @@
 <component name="libraryTable">
   <library name="Maven: com.netflix.servo:servo-core:0.12.21">
     <CLASSES>
+<<<<<<< HEAD
       <root url="jar://$PROJECT_DIR$/../maven/xh-repor/com/netflix/servo/servo-core/0.12.21/servo-core-0.12.21.jar!/" />
     </CLASSES>
     <JAVADOC>
@@ -8,6 +9,15 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../maven/xh-repor/com/netflix/servo/servo-core/0.12.21/servo-core-0.12.21-sources.jar!/" />
+=======
+      <root url="jar://$MAVEN_REPOSITORY$/com/netflix/servo/servo-core/0.12.21/servo-core-0.12.21.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/netflix/servo/servo-core/0.12.21/servo-core-0.12.21-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/netflix/servo/servo-core/0.12.21/servo-core-0.12.21-sources.jar!/" />
+>>>>>>> 05ae7de2a0f88f81a0bb2ef042dd79c3f775550c
     </SOURCES>
   </library>
 </component>

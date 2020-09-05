@@ -1,6 +1,7 @@
 <component name="libraryTable">
   <library name="Maven: org.springframework.cloud:spring-cloud-netflix-hystrix:2.2.4.RELEASE">
     <CLASSES>
+<<<<<<< HEAD
       <root url="jar://$PROJECT_DIR$/../maven/xh-repor/org/springframework/cloud/spring-cloud-netflix-hystrix/2.2.4.RELEASE/spring-cloud-netflix-hystrix-2.2.4.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC>
@@ -8,6 +9,15 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../maven/xh-repor/org/springframework/cloud/spring-cloud-netflix-hystrix/2.2.4.RELEASE/spring-cloud-netflix-hystrix-2.2.4.RELEASE-sources.jar!/" />
+=======
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-netflix-hystrix/2.2.4.RELEASE/spring-cloud-netflix-hystrix-2.2.4.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-netflix-hystrix/2.2.4.RELEASE/spring-cloud-netflix-hystrix-2.2.4.RELEASE-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-netflix-hystrix/2.2.4.RELEASE/spring-cloud-netflix-hystrix-2.2.4.RELEASE-sources.jar!/" />
+>>>>>>> 05ae7de2a0f88f81a0bb2ef042dd79c3f775550c
     </SOURCES>
   </library>
 </component>

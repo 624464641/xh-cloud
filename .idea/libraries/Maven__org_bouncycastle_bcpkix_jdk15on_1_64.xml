@@ -1,6 +1,7 @@
 <component name="libraryTable">
   <library name="Maven: org.bouncycastle:bcpkix-jdk15on:1.64">
     <CLASSES>
+<<<<<<< HEAD
       <root url="jar://$PROJECT_DIR$/../maven/xh-repor/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar!/" />
     </CLASSES>
     <JAVADOC>
@@ -8,6 +9,15 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../maven/xh-repor/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64-sources.jar!/" />
+=======
+      <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64-sources.jar!/" />
+>>>>>>> 05ae7de2a0f88f81a0bb2ef042dd79c3f775550c
     </SOURCES>
   </library>
 </component>
