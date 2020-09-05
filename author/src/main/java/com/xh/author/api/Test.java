@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController("/auth")
 public class Test {
 
-    @PostMapping("/say")
+    @GetMapping("/say")
     public void say(){
         System.out.println("进来了!");
     }

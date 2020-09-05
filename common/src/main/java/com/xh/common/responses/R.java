@@ -15,21 +15,30 @@ public class R  extends HashMap<String, Object> implements Serializable {
     private static final long serialVersionUID = 8458730375005270316L;
 
     int code;
-    String mes;
+    String msg;
+
+
 
     private R(){
         this.put((String)"code", 200);
         this.put((String)"msg", "success");
     }
 
-    public R(int code  , String mes){
+    public R(int code  , String msg){
         this.code = code;
-        this.mes = mes;
+        this.msg = msg;
     }
 
     public static R ok(){
         return new R();
     }
+
+    public static R error(){
+        R r = new R();
+        r.put("code" , 500);
+        return r;
+    }
+
 
     public static R error(int code  , String mes){
         return new R(code , mes);
@@ -48,11 +57,11 @@ public class R  extends HashMap<String, Object> implements Serializable {
         this.code = code;
     }
 
-    public String getMes() {
-        return mes;
+    public String getMeg() {
+        return msg;
     }
 
-    public void setMes(String mes) {
-        this.mes = mes;
+    public void setMeg(String msg) {
+        this.msg = msg;
     }
 }

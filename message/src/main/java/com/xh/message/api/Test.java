@@ -1,5 +1,6 @@
 package com.xh.message.api;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.xh.common.responses.R;
 import com.xh.message.feign.ExportFeignApi;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,8 +22,14 @@ public class Test {
     }
 
     @GetMapping("/say")
+    @HystrixCommand(fallbackMethod = "fallbackMethod")
     public R say(){
         System.out.println("message====进来了！" +exportFeignApi.findExport("123") );
         return R.ok().data(exportFeignApi.findExport("123") );
+    }
+
+    public  R fallbackMethod(){
+        System.out.println("微服务启动中。。。。1111111111");
+        return R.error().data("微服务启动中。。。。");
     }
 }
