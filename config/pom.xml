@@ -52,18 +52,18 @@
     </dependencies>
 
     <build>
-<!--        <resources>-->
-<!--            <resource>-->
-<!--                <directory>src/main/resources</directory>-->
-<!--                <filtering>true</filtering>-->
-<!--            </resource>-->
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
 <!--            <resource>-->
 <!--                <directory>src/main/java</directory>-->
 <!--                <includes>-->
 <!--                    <include>**/*Mapper.xml</include>-->
 <!--                </includes>-->
 <!--            </resource>-->
-<!--        </resources>-->
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

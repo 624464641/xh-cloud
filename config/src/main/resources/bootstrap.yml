@@ -6,7 +6,7 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone :  http://xh1:10000/eureka
+      defaultZone :  @xh.eureka.url@
 spring:
   application:
     name: xh-config
@@ -17,4 +17,4 @@ spring:
     config:
       server:
         native:
-          search-locations: config-file/
+          search-locations: config-file/ # 直接读取根目录 不需要 /**

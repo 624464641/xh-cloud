@@ -6,7 +6,7 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://xh1:10000/eureka
+      defaultZone: @xh.eureka.url@
 spring:
   application:
     name: xh-gateway
@@ -16,6 +16,6 @@ spring:
       discovery:
         enabled: true
         service-id: xh-config
-      name: gateway
+      name: gateway # 指定配置本地文件名称
       #profile: dev
       uri: http://xh1:10006/
