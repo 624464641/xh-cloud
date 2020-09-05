@@ -8,6 +8,14 @@ spring:
     user:
       name: user
       password: root
+  cloud:
+    config:
+      fail-fast: true
+      discovery:
+        enabled: true # 是否启动服务发现
+        service-id: xh-config
+      uri: http://xh1:10006/
+      name: dev-config
 
 eureka:
   client:
