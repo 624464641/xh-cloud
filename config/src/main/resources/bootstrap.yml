@@ -18,3 +18,4 @@ spring:
       server:
         native:
           search-locations: config-file/
+      profile:

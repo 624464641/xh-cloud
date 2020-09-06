@@ -12,7 +12,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone : @xh.eureka.url@
+      defaultZone : http://xh1:10000/eureka
   instance:
     hostname: xh-author
     prefer-ip-address: true
