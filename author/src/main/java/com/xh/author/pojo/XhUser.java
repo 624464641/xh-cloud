@@ -3,9 +3,7 @@ package com.xh.author.pojo;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.xh.common.base.BaseEntity;
 import lombok.Data;
-import lombok.extern.slf4j.Slf4j;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 /**
