@@ -12,6 +12,7 @@ spring:
         service-id: xh-config
       uri: http://xh1:10006/
       name: dev-config
+
 eureka:
   client:
     service-url:
