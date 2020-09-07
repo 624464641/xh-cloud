@@ -11,9 +11,11 @@ import java.time.LocalDateTime;
  *
  * @Author xh
  * @Date 2020/8/15- 0:20
+ *
+ * 用户表
  */
 @Data
-@TableName("auth_xh_user")
+@TableName("xh_user")
 public class XhUser extends BaseEntity {
 
     private String firstName;
@@ -21,6 +23,8 @@ public class XhUser extends BaseEntity {
     private String lastName;
 
     private String passWord;
+
+    private String phoneNumber;
 
     private LocalDateTime birthdate;
 
