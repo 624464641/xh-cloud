@@ -23,6 +23,7 @@ public class XhExportServiceImpl implements XhExportService {
 
     @Override
     public String test() {
+        mongoTemplate.findById("" , Object.class);
         return "XhExportServiceImpl";
     }
 }
