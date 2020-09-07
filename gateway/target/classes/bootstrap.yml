@@ -1,0 +1,21 @@
+server:
+  port: 10004
+eureka:
+  instance:
+    hostname: xh-gateway
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10000/eureka
+spring:
+  application:
+    name: xh-gateway
+  cloud:
+    config:
+      fail-fast: true # 是否启动快速失败功能， 有限判断config是否正常启动
+      discovery:
+        enabled: true
+        service-id: xh-config
+      name: gateway # 指定配置本地文件名称
+      #profile: dev
+      uri: http://xh1:10006/
