@@ -39,8 +39,6 @@ public class XhExportServiceImpl implements XhExportService {
         return "XhExportServiceImpl";
     }
 
-
-
     private void setRedis(final String key , Object value){
         ValueOperations<Serializable, Object> operations = redisTemplate.opsForValue();
         operations.set(key , value);
