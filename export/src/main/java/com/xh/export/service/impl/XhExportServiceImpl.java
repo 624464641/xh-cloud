@@ -1,5 +1,6 @@
 package com.xh.export.service.impl;
 
+import com.xh.export.pojo.Lansen;
 import com.xh.export.service.XhExportService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
@@ -20,10 +21,12 @@ public class XhExportServiceImpl implements XhExportService {
         this.mongoTemplate = mongoTemplate;
     }
 
-
     @Override
     public String test() {
-        mongoTemplate.findById("" , Object.class);
+        Lansen lansen= new Lansen();
+        lansen.setName("lansen1");
+        lansen.setZjb("xll1");
+        mongoTemplate.save(lansen);
         return "XhExportServiceImpl";
     }
 }
