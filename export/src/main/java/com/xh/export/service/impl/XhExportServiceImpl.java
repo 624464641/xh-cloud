@@ -36,11 +36,15 @@ public class XhExportServiceImpl implements XhExportService {
         lansen.setZjb("xll1");
         mongoTemplate.save(lansen);
         this.setRedis("xh:redis:xx" , "11111122223333");
+
+
+
+
         return "XhExportServiceImpl";
     }
 
     private void setRedis(final String key , Object value){
         ValueOperations<Serializable, Object> operations = redisTemplate.opsForValue();
-        operations.set(key , value);
+        operations.set(key , value  , 10000);
     }
 }
