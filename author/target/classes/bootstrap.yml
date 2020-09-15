@@ -1,0 +1,26 @@
+server:
+  port: 10003
+
+spring:
+  application:
+    name: xh-author
+  security:
+    user:
+      name: user
+      password: root
+  cloud:
+    config:
+      fail-fast: true
+      discovery:
+        enabled: true # 是否启动服务发现
+        service-id: xh-config
+      uri: http://xh1:10006/
+      name: dev-config
+
+eureka:
+  client:
+    service-url:
+      defaultZone : http://xh1:10000/eureka
+  instance:
+    hostname: xh-author
+    prefer-ip-address: true
