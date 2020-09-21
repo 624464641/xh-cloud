@@ -30,6 +30,6 @@ public class Test {
 
     public  R fallbackMethod(){
         System.out.println("微服务启动中。。。。1111111111");
-        return R.error().data("微服务启动中。。。。");
+        return R.error("微服务启动中。。。。");
     }
 }

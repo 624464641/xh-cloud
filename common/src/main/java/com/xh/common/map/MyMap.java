@@ -12,6 +12,15 @@ import java.util.stream.Collectors;
 public class MyMap {
 
     public static void main(String[] args) {
+
+        Pair<String , Object> p = new Pair<>("1" , "yi");
+        Pair<String , Object> p1 = new Pair<>("1" , "er");
+        Pair<String , Object> p2 = new Pair<>("1" , "san");
+
+
+
+
+
         // Map<String,String > map= new HashMap<>(2,0.75f);
         // map.put("123","2");
         // String result =  map.put("123","3"); // 返回被替换为原来的值

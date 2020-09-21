@@ -33,9 +33,10 @@ public class R  extends HashMap<String, Object> implements Serializable {
         return new R();
     }
 
-    public static R error(){
+    public static R error(String  msg){
         R r = new R();
         r.put("code" , 500);
+        r.put("msg" , msg);
         return r;
     }
 
