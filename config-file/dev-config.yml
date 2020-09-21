@@ -7,18 +7,25 @@ spring:
       database: xh
       port: 27017
       host: 127.0.0.1
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
+#  rabbitmq:
+#    host: localhost
+#    port: 15672
+#    username: guest
+#    password: guest
   # Mysql
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-#    url: jdbc:mysql://192.168.31.106:3306/lansen?serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=true
-#    username: sg
-#    password: Ssg-DKJ832-QSEF
-    url: jdbc:mysql://localhost:3306/learn_ls?serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=true
-    username: root
-    password: root
-
+    url: jdbc:mysql://192.168.31.106:3306/database_name?serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=true
+    username: sg
+    password: Ssg-DKJ832-QSEF
+#    url: jdbc:mysql://localhost:3306/learn_ls?serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=true
+#    username: root
+#    password: root , com/xh/*/mapper/*/xml/*.xml
+#mybatis-plus:
+#  mapper-locations: classpath*:com/xh/*/mapper
+#  type-aliases-package: com/xh/*/pojo
+#  configuration:
+#    # 驼峰
+#    map-underscore-to-camel-case: true
+#    cache-enabled: false
+#    call-setters-on-nulls: true

@@ -16,7 +16,8 @@ spring:
         service-id: xh-config
       uri: http://xh1:10006/
       name: dev-config
-
+  jackson:
+    date-format: yyyy-MM-dd
 eureka:
   client:
     service-url:
@@ -24,3 +25,6 @@ eureka:
   instance:
     hostname: xh-author
     prefer-ip-address: true
+mybatis-plus:
+  mapper-locations: classpath*:com/xh/author/mapper
+  type-aliases-package: com.xh.author.pojo
