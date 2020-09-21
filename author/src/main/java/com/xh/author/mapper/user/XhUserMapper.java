@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
  * @date 2020/9/20
  */
 @Repository
-public interface UserMapper extends BaseMapper<XhUser> {
+public interface XhUserMapper extends BaseMapper<XhUser> {
 
     /**
      * 根据用户名获取信息

@@ -8,7 +8,7 @@ import com.xh.author.pojo.XhUser;
  * @date 2020/9/20
  */
 
-public interface UserService extends IService<XhUser> {
+public interface XhUserService extends IService<XhUser> {
 
     XhUser loadUserByUsername(String name);
 
