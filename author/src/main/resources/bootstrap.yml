@@ -25,6 +25,3 @@ eureka:
   instance:
     hostname: xh-author
     prefer-ip-address: true
-#mybatis-plus:
-#  mapper-locations: classpath*:com/xh/author/mapper
-#  type-aliases-package: com.xh.author.pojo

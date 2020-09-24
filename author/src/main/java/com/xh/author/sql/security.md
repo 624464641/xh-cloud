@@ -10,5 +10,15 @@
   
   
  #### 1. 用户登录认证
+ 1. userDetailService security默认登录逻辑
+ 
+ 2. UserDetails 接口 
+  2.1
+  
+  
+  
+  密码的比较？
+  PasswordEncoder.encode() matches()
+ 
   
  
