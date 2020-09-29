@@ -12,7 +12,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @SpringBootApplication
 @EnableDiscoveryClient
 // @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
-// @MapperScan(value = {"com.xh.author.mapper" })
+ @MapperScan(value = {"com.xh.author.mapper" })
 public class AuthorApplication {
 
     public static void main(String[] args) {

@@ -1,13 +1,8 @@
 server:
-  port: 10003
-
+  port: 10005
 spring:
   application:
-    name: xh-author
-  security:
-    user:
-      name: user
-      password: root
+    name: xh-message
   cloud:
     config:
       fail-fast: true
@@ -16,15 +11,10 @@ spring:
         service-id: xh-config
       uri: http://xh1:10006/
       name: dev-config
-  jackson:
-    date-format: yyyy-MM-dd
 eureka:
   client:
     service-url:
       defaultZone : http://xh1:10000/eureka
   instance:
-    hostname: xh-author
+    hostname: xh-message
     prefer-ip-address: true
-#mybatis-plus:
-#  mapper-locations: classpath*:com/xh/author/mapper
-#  type-aliases-package: com.xh.author.pojo

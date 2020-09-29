@@ -1,5 +1,7 @@
 package com.xh.common.list;
 
+import java.util.List;
+
 /**
  * Face up to failure
  *
@@ -11,6 +13,9 @@ public class MyList {
     Object [] element;
     int size;
 
+    public static void main(String[] args) {
+
+    }
 
 
 }
