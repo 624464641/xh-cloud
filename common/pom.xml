@@ -54,14 +54,32 @@
             <artifactId>lettuce-core</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>io.seata</groupId>
+            <artifactId>seata-spring-boot-starter</artifactId>
+            <version>1.2.0</version>
+        </dependency>
 
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-alibaba-seata</artifactId>
+            <version>2.1.0.RELEASE</version>
+            <!-- 这里需要剔除，因为上面我们已经引入了自己对应的版本 -->
+            <exclusions>
+                <exclusion>
+                    <artifactId>io.seata</artifactId>
+                    <groupId>seata-spring-boot-starter</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!--  mq  -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-amqp</artifactId>
         </dependency>
 
     </dependencies>
-
 
 
 </project>

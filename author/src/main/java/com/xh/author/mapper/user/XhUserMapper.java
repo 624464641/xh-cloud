@@ -2,14 +2,14 @@ package com.xh.author.mapper.user;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.xh.author.pojo.XhUser;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
 
 /**
  * @author xt
  * @date 2020/9/20
  */
-@Repository
+@Mapper
 public interface XhUserMapper extends BaseMapper<XhUser> {
 
     /**

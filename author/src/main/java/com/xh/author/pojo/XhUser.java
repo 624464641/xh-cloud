@@ -24,6 +24,8 @@ public class XhUser extends BaseEntity {
 
     private String name;
 
+    private Integer age;
+
     private String passWord;
 
     private String phoneNumber;

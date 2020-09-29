@@ -1,5 +1,9 @@
 package com.xh.common.threds;
 
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.*;
+import org.springframework.security.crypto.scrypt.SCryptPasswordEncoder;
+
 import java.lang.management.ManagementFactory;
 import java.lang.management.ThreadInfo;
 import java.lang.management.ThreadMXBean;
@@ -23,24 +27,6 @@ public class Test
         // for (ThreadInfo threadInfo : threadInfos) {
         //     System.out.println("[" + threadInfo.getThreadId() + "] " + threadInfo.getThreadName());
         // }
-
-        Map<String , Object> map = new TreeMap<>();
-        map.put("123" , "小华");
-        map.put("23" , "大话");
-        map.put("32" , "西游");
-        map.put("56" , "西游");
-        map.put("45" , 45);
-        map.put(null , null);
-
-        Iterator<Map.Entry<String, Object>> iterator = map.entrySet().iterator();
-
-        while (iterator.hasNext()){
-            if(iterator.next() == null ){
-                continue;
-            }
-            Map.Entry<String, Object>   ma = iterator.next();
-            System.out.println(ma.getKey());
-        }
 
 
 
